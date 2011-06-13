@@ -1,0 +1,7 @@
+%h2 An endless list of 100 Articles
+
+#results
+  = render @articles
+  
+  = will_paginate @articles
+  = pageless @articles.total_pages, articles_path
